@@ -29,6 +29,33 @@ header {
 
 .col-2 {flex-basis: 16.66666%;}
 .col-3 {flex-basis: 25%;}
-.col-4 {flex-basis: 33.33333%;}
 .col-5 {flex-basis: 41.66666%;}
 .col-12 {flex-basis: 100%;}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 308px;
+}
+
+.card img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 256px;
+    z-index: 2;
+}
+.card img::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #D8D8D8;
+}
