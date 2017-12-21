@@ -20,6 +20,32 @@ header {
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 22px;
+    color: #1d1d1d;
+    line-height: 34px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #1d1d1d;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* layout */
 
@@ -48,6 +74,10 @@ header {
 .col-4 {
     flex-basis: 33.33333%;
 }
+
+.restaurants .col-4 {
+    flex-basis: inherit;
+} 
 
 .col-5 {
     flex-basis: 41.66667%;
@@ -92,10 +122,7 @@ header .col-4 {
     font-family: 'Roboto', sans-serif;
     width: 292px;
     color: #1D1D1D;
-    background-color: #fff;
-    background-image: url(../images/icons/location.svg);
-    background-repeat: no-repeat;
-    background-position: 12px center;
+    background: #fff url(../images/icons/location.svg) 12px center no-repeat;
     padding: 10px 36px;
     border: 1px solid #E0E0E0;
     border-radius: 2px;
@@ -142,6 +169,7 @@ header .col-4 {
     color: #1D1D1D;
     width: 100%;
     padding: 8px 30px 16px 30px;
+    margin-bottom: 56px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -162,8 +190,8 @@ header .col-4 {
     width: 308px;
     height: 100%;
     z-index: 2;
-    color: #000;
     text-decoration: none;
+    margin-bottom: 16px;
 }
 
 .card::before {
@@ -182,4 +210,31 @@ header .col-4 {
     display: block;
     width: 100%;
     height: 256px;
+}
+
+.card li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+    margin: 3px 0;
+}
+
+.card li::after {
+    content: '•';
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 3px;
+}
+
+.card li:last-child:after {
+    content: '';
+}
+
+.card time {
+    display: block;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1d1d1d;
+    margin-bottom: 20px;
 }
