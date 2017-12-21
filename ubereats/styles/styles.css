@@ -1,3 +1,5 @@
+/* common */
+
 html {
     box-sizing: border-box;
 }
@@ -17,6 +19,9 @@ header {
     margin-bottom: 32px;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
+
+
+/* layout */
 
 .container {
     width: 956px;
@@ -51,6 +56,9 @@ header {
 .col-12 {
     flex-basis: 100%;
 }
+
+
+/* header */
 
 header span {
     color: #626262;
@@ -123,6 +131,30 @@ header .col-4 {
     padding: 0 11px;
     vertical-align: middle;
 }
+
+/* search input */
+
+.search {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    width: 100%;
+    padding: 8px 30px 16px 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(117, 117, 117, .4);
+    background: url(../images/icons/search.svg) no-repeat left 8px;
+}
+
+.search::placeholder {
+    color: #626262;
+    opacity: .5;
+}
+
+/* restaurants */
 
 .card {
     position: relative;
