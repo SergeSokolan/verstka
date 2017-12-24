@@ -273,7 +273,11 @@ header .col-4 {
     height: 256px;
 }
 
-.card li {
+.card ul {
+    display: inline-block;
+}
+
+.card li, .price {
     display: inline-block;
     font-size: 14px;
     line-height: 21px;
@@ -281,15 +285,11 @@ header .col-4 {
     margin: 3px 0;
 }
 
-.card li::after {
+.card li::before {
     content: '•';
     display: inline-block;
     vertical-align: middle;
-    padding-left: 3px;
-}
-
-.card li:last-child:after {
-    content: '';
+    padding-right: 3px;
 }
 
 .card time {
@@ -314,7 +314,7 @@ footer section {
 
 .footer-logo {
     display: inline-block;
-    padding: 56px 0 40px 0;
+    padding: 56px 0 36px 0;
 }
 
 .footer-links .row {
@@ -332,11 +332,11 @@ footer section {
     font-size: 13px;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 12px 48px;
+    padding: 13px 48px;
     background-color: #3B3B3B;
     background-image: url(../images/icons/world.svg), url(../images/icons/select-arrow.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 16px center, calc(100% - 8px) center;
+    background-position: 24px center, calc(100% - 8px) center;
     margin: 33px 0;
     border: none;
     -webkit-appearance: none;
@@ -406,7 +406,7 @@ select::-ms-expand {
 }
 
 .footer-list li {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .footer-list li:last-child {
@@ -419,8 +419,8 @@ select::-ms-expand {
 }
 
 .getapp {
-    margin-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 42px;
+    padding-bottom: 35px;
     text-align: center;
 }
 
@@ -434,7 +434,7 @@ select::-ms-expand {
 }
 
 .footer-copyright {
-    margin-top: 40px;
+    margin-top: 36px;
     padding-bottom: 40px;
     border-bottom: none;
 }
