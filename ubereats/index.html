@@ -10,35 +10,41 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <a class="header-logo" href="">
+                    <a class="logo" href="">
                         <img src="./images/logo/logo.svg" alt="logo">
                     </a>
                 </div>
                 <div class="col-5">
-                    <form action="">
-                        <button class="button-order" type="submit">ASAP</button>
-                        <span>to</span>
-                        <input class="input-adress" type="text" value="ul. Bolshaya Dmitrovka,22">
-                    </form>
+                    <div class="order">
+                        <form action="">
+                            <button class="order__button" type="submit">ASAP</button>
+                            <span class="order__text">to</span>
+                            <input class="order__input" type="text" name="adress" value="ul. Bolshaya Dmitrovka,22">
+                        </form>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <input class="input-btn input-btn-white" type="button" value="Sign In">
-                    <input class="input-btn input-btn-black" type="button" value="Register">
-                    <img class="icon" src="./images/icons/basket.svg" alt="basket">
+                    <div class="user">
+                        <input class="user__btn user__btn--white" type="button" value="Sign In">
+                        <input class="user__btn user__btn--black" type="button" value="Register">
+                        <a href="">
+                            <img class="user__basket" src="./images/icons/basket.svg" alt="basket">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section class="search">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <input class="search" type="text" placeholder="Search for restaurant or cuisine">
+                        <input class="search__input" type="text" placeholder="Search for restaurant or cuisine">
                     </div>
                 </div>
             </div>
@@ -50,214 +56,228 @@
                 <div class="row">
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/1.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/1.png" alt="pic">
                             <h2>Макдоналдс — Газетный</h2>
                             <div>
-                                <span class="price">₽₽</span>
-                                <ul>
-                                    <li>Бургеры</li>
+                                <span class="card__price">₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Бургеры</li>
                                 </ul>
                             </div>
-                            <time>25 - 35 Min</time>
+                            <time class="card__time">25 - 35 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/2.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/2.png" alt="pic">
                             <h2>DimSum & Co — ЦДМ</h2>
                             <div>
-                                <span class="price">₽</span>
-                                <ul>
-                                    <li>Японская</li>
-                                    <li>Китайская</li>
-                                    <li>Азиатская</li>
+                                <span class="card__price">₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Японская</li>
+                                    <li class="kitchen-list__item">Китайская</li>
+                                    <li class="kitchen-list__item">Азиатская</li>
                                 </ul>
                             </div>
-                            <time>40 - 50 Min</time>
+                            <time class="card__time">40 - 50 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/3.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/3.png" alt="pic">
                             <h2>ДвижОК — Манежная</h2>
                             <div>
-                                <span class="price">₽</span>
-                                <ul>
-                                    <li>Американская</li>
-                                    <li>Европейская</li>
+                                <span class="card__price">₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Американская</li>
+                                    <li class="kitchen-list__item">Европейская</li>
                                 </ul>
                             </div>
-                            <time>35 - 45 Min</time>
+                            <time class="card__time">35 - 45 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/4.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/4.png" alt="pic">
                             <h2>НЯ — NHA</h2>
                             <div>
-                                <span class="price">₽₽</span>
-                                <ul>
-                                    <li>Вьетнамская</li>
+                                <span class="card__price">₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Вьетнамская</li>
                                 </ul>
                             </div>
-                            <time>30 - 40 Min</time>
+                            <time class="card__time">30 - 40 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/5.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/5.png" alt="pic">
                             <h2>Точка Дзы — Цветной</h2>
                             <div>
-                                <span class="price">₽₽</span>
-                                <ul>
-                                    <li>Вьетнамская</li>
+                                <span class="card__price">₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Вьетнамская</li>
                                 </ul>
                             </div>
-                            <time>40 - 50 Min</time>
+                            <time class="card__time">40 - 50 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/6.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/6.png" alt="pic">
                             <h2>Cinnabon</h2>
                             <div>
-                                <span class="price">₽</span>
-                                <ul>
-                                    <li>Выпечка</li>
-                                    <li>Десерты</li>
-                                    <li>Капкейки</li>
+                                <span class="card__price">₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Выпечка</li>
+                                    <li class="kitchen-list__item">Десерты</li>
+                                    <li class="kitchen-list__item">Капкейки</li>
                                 </ul>
                             </div>
-                            <time>25 - 35 Min</time>
+                            <time class="card__time">25 - 35 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/7.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/7.png" alt="pic">
                             <h2>PIZZELOVE</h2>
                             <div>
-                                <span class="price">₽₽</span>
-                                <ul>
-                                    <li>Пицца</li>
+                                <span class="card__price">₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Пицца</li>
                                 </ul>
                             </div>
-                            <time>15 - 25 Min</time>
+                            <time class="card__time">15 - 25 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/8.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/8.png" alt="pic">
                             <h2>Zю кафе — Тверская</h2>
                             <div>
-                                <span class="price">₽₽</span>
-                                <ul>
-                                    <li>Японская</li>
+                                <span class="card__price">₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Японская</li>
                                 </ul>
                             </div>
-                            <time>25-35 Min</time>
+                            <time class="card__time">25-35 Min</time>
                         </a>
                     </div>
                     <div class="col-4">
                         <a class="card" href="">
-                            <img src="./images/gallery/9.png" alt="pic">
+                            <img class="card__img" src="./images/gallery/9.png" alt="pic">
                             <h2>Bar BQ Cafe — Манежная</h2>
                             <div>
-                                <span class="price">₽₽₽</span>
-                                <ul>
-                                    <li>Европейская</li>
+                                <span class="card__price">₽₽₽</span>
+                                <ul class="card__kitchen-list">
+                                    <li class="kitchen-list__item">Европейская</li>
                                 </ul>
                             </div>
-                            <time>30 - 40 Min</time>
+                            <time class="card__time">30 - 40 Min</time>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <section>
-                <a class="footer-logo" href="">
-                    <img src="./images/logo/white-logo.svg" alt="logo">
-                </a>
-            </section>
-            <section class="footer-links">
-                <div class="row">
-                    <div class="col-4">
-                        <select class="select-country">
-                            <option value="ENGLISH">ENGLISH</option>
-                            <option value="RUSSIAN">RUSSIAN</option>
-                            <option value="UKRAINE">UKRAINE</option>
-                            <option value="CHINEESE">CHINEESE</option>
-                        </select>
-                        <p class="hashtag">
-                            <span>#</span>UberEats</p>
-                        <ul class="social-icons">
-                            <li>
-                                <a class="social-fb" href=""></a>
-                            </li>
-                            <li>
-                                <a class="social-tw" href=""></a>
-                            </li>
-                            <li>
-                                <a class="social-inst" href=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <ul class="footer-list">
-                            <li>
-                                <a href="">About UberEats</a>
-                            </li>
-                            <li>
-                                <a href="">Become a Delivery Partner</a>
-                            </li>
-                            <li>
-                                <a href="">Become a Restaurant Partner</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <ul class="footer-list">
-                            <li>
-                                <a href="">See all cities</a>
-                            </li>
-                            <li>
-                                <a href="">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="">Help</a>
-                            </li>
-                            <li>
-                                <a href="">FAQs</a>
-                            </li>
-                        </ul>
+            <section class="footer__section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="logo--footer" href="">
+                                <img src="./images/logo/white-logo.svg" alt="logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="getapp">
-                <div class="row">
-                    <div class="col-12">
-                        <a href="">
-                            <img src="./images/icons/app-store.svg" alt="appstore">
-                        </a>
-                        <a href="">
-                            <img src="./images/icons/google-play.svg" alt="googleplay">
-                        </a>
+            <section class="footer__section footer__links">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
 
+                            <select class="footer__select--country">
+                                <option value="ENGLISH">ENGLISH</option>
+                                <option value="RUSSIAN">RUSSIAN</option>
+                                <option value="UKRAINE">UKRAINE</option>
+                                <option value="CHINEESE">CHINEESE</option>
+                            </select>
+
+                            <p class="links__hashtag">
+                                <span class="hashtag--green">#</span>UberEats</p>
+                            <ul class="social-links">
+                                <li class="social-links__item">
+                                    <a class="social-links__link social-links__link--fb" href=""></a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__item social-links__link--tw" href=""></a>
+                                </li>
+                                <li class="social-links__item">
+                                    <a class="social-links__item social-links__link--inst" href=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="footer-links">
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">About UberEats</a>
+                                </li>
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">Become a Delivery Partner</a>
+                                </li>
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">Become a Restaurant Partner</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="footer-links">
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">See all cities</a>
+                                </li>
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">Pricing</a>
+                                </li>
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">Help</a>
+                                </li>
+                                <li class="footer-links__item">
+                                    <a class="footer-links__link" href="">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="footer-copyright">
-                <div class="row">
-                    <div class="col-4">
-                        <small>© 2017 Uber Technologies Inc.</small>
+            <section class="footer__section footer-getapp">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="footer-getapp__link" href="">
+                                <img src="./images/icons/app-store.svg" alt="appstore">
+                            </a>
+                            <a class="footer-getapp__link" href="">
+                                <img src="./images/icons/google-play.svg" alt="googleplay">
+                            </a>
+
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <small>Privacy</small>
-                    </div>
-                    <div class="col-4">
-                        <small>Terms</small>
+                </div>
+            </section>
+            <section class="footer__section footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <small>© 2017 Uber Technologies Inc.</small>
+                        </div>
+                        <div class="col-4">
+                            <small>Privacy</small>
+                        </div>
+                        <div class="col-4">
+                            <small>Terms</small>
+                        </div>
                     </div>
                 </div>
             </section>
